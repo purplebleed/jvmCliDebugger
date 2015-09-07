@@ -1,0 +1,10 @@
+
+A totally programmable debugger. Sometimes debugging remote server could be extremely slow, in the case, jdb maybe a better solution. But somehow it doesn't support conditional breakpoint. The jvmCliDebugger provides a programmable interface and allows you to get values from target vm. Once you have these values, you can do anything you want like filtering some particular value, logging or even implement some complicate logic.
+
+To use this command line jvm debugger
+
+1. Modify the ExampleExecuter you need to specific line name(for breakpoint), target class name, and implemtent your own execute function (detail usage is in code). 
+
+2. Compile: mvn clean compile assembly:single
+
+3.Run: ./debug.sh [port]
